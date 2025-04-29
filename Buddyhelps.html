@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buddy Helps - Santulya</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f8fa;
+    }
+    header {
+      background-color: #6C63FF;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 1rem 0;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .card p {
+      margin: 0;
+      color: #777;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buddy Helps - Find Your Support</h1>
+  </header>
+
+  <div class="container">
+    <h2>Meet Your Buddies</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ankita Atole</h3>
+        <p>📞 9049944547</p>
+      </div>
+      <div class="card">
+        <h3>Divya Bagane</h3>
+        <p>📞 8767892303</p>
+      </div>
+      <div class="card">
+        <h3>Sakshi Darekar</h3>
+        <p>📞 8087215660</p>
+      </div>
+      <div class="card">
+        <h3>Prajakta Deshpande</h3>
+        <p>📞 9325099643</p>
+      </div>
+    </div>
+
+    <h2>Request a Buddy</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="reason">Why do you want a buddy?</label><br>
+      <textarea id="reason" name="reason" rows="4" required></textarea><br>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Santulya</title>
+  <style>
+    /* ========== Reset & Base ========== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: serif;
+      line-height: 1.5;
+      background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(170,245,248,1) 0%, rgba(248,162,239,0.8) 90%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ========== Header ========== */
+    header {
+      background: #d4d4d5;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo{
+      width:20px;
+      height:20px;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-title img {
+      height: 45px;
+    }
+    .logo-title h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e66bf4;
+    }
+
+    /* Responsive Header */
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        margin-top: 0.5rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    /* ========== Tagline ========== */
+    .tagline {
+      text-align: center;
+      font-style: italic;
+      margin: 1rem 0 2rem;
+      color: #4B5563;
+      font-size: 1.2rem;
+    }
+
+    /* ========== Services Grid ========== */
+    .services {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex: 1;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      padding-bottom: 2rem;
+    }
+    @media(min-width: 640px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media(min-width: 1024px) {
+      .services {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* ========== Card ========== */
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      text-align: center;
+      margin: 1rem;
+      font-size: 1.125rem;
+    }
+    .card img {
+      flex-shrink: 0;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .btn-grad {
+      background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+      margin: 10px auto 0;
+      padding: 12px 30px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .btn-grad:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ========== Footer ========== */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #6B7280;
+      background: #f8fafc;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="logo.jpeg" alt="Santulya Logo" style="height: 30px; width: 20px">
+    <h1>SANTULYA</h1>
+  </div>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#payments">Payments</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<p class="tagline">Balance in and for life</p>
+
+<main class="services" id="services">
+  <div class="card">
+    <h2>REACH IN A CLICK</h2>
+    <img src="https://via.placeholder.com/400x300?text=Doctor" alt="Reach in a click">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>DIETARY SUPPLEMENTS</h2>
+    <img src="https://via.placeholder.com/400x300?text=Supplements" alt="Dietary supplements">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>LIVE WORKOUTS</h2>
+    <img src="https://via.placeholder.com/400x300?text=Workout" alt="Live workouts">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>PERSONALIZED PLANS</h2>
+    <img src="https://via.placeholder.com/400x300?text=Diet+Plan" alt="Personalized plans">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>COUNSELLING SESSIONS</h2>
+    <img src="https://via.placeholder.com/400x300?text=Counselling" alt="Counselling sessions">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>BUDDY HELPS YOU</h2>
+    <img src="https://via.placeholder.com/400x300?text=Buddy+Help" alt="Buddy helps you">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>OFFLINE SESSIONS</h2>
+    <img src="https://via.placeholder.com/400x300?text=Offline+Sessions" alt="Offline sessions">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+
+  <div class="card">
+    <h2>MENSTRUAL TRACKER</h2>
+    <img src="https://via.placeholder.com/400x300?text=Period+Tracker" alt="Menstrual tracker">
+    <a href="#" class="btn-grad">VISIT NOW</a>
+  </div>
+</main>
+
+<footer>
+  © 2025 Santulya ❤️. All rights reserved.
+</footer>
+
+</body>
+</html>

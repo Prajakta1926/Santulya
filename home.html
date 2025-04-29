@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santulya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #b3f0ff, #f7c6f7);
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #d3d3d3;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background: linear-gradient(to right, #3f87ff, #a24bff);
+      border: none;
+      color: white;
+      padding: 0.6rem 1.5rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\logo.jpeg" alt="Santulya logo" />
+      <span>SANTULYA</span>
+    </div>
+    <nav>
+      <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\AboutUs.html">About Us</a>
+      <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\services.html">Services</a>
+      <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\payments.html">Payments</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="tagline"><em>Balance in and for life</em></h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>REACH IN A CLICK</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\doctor.jpg" alt="Reach in a click" />
+        <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\Reach_in_A_Click.html">
+        <button>VISIT NOW</button>
+        </a>
+      </div>
+      <div class="card">
+        <h3>DIETARY SUPPLEMENTS</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\supplements.jpg" alt="Dietary supplements" />
+        <button>VISIT NOW</button>
+      </div>
+      <div class="card">
+        <h3>LIVE WORKOUTS</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\workouts.jpg" alt="Live workouts" />
+        <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\Live_Workouts.html">
+        <button>VISIT NOW</button>
+        </a>
+      </div>
+      <div class="card">
+        <h3>PERSONALIZED PLANS</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\personalised_plans.jpg" alt="Personalized plans" />
+        <button>VISIT NOW</button>
+      </div>
+      <div class="card">
+        <h3>COUNSELLING SESSIONS</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\counsellor.jpg" alt="Counselling sessions" />
+        <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\COUNSELLING_SESSIONS.html">
+        <button>VISIT NOW</button>
+        </a>
+      </div>
+      <div class="card">
+        <h3>BUDDY HELPS YOU</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\friends.jpg" alt="Buddy helps you" />
+        <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\Buddyhelps.html">
+        <button>VISIT NOW</button>
+        </a>
+      </div>
+      <div class="card">
+        <h3>OFFLINE SESSIONS</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\sessions.jpg" alt="Offline sessions" />
+        <a href="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\Offline_sessions.html">
+        <button>VISIT NOW</button>
+        </a>
+      </div>
+      <div class="card">
+        <h3>MENSTRUAL TRACKER</h3>
+        <img src="C:\Users\praja\OneDrive\Documents\GitHub\fisherman-scompass\tracker.jpg" alt="Menstrual tracker" />
+        <button>VISIT NOW</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
